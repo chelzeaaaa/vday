@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>hi &lt;3</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h1 style="text-align: center; color: #f26fbe; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">azie</h1>
+            <nav class="menubar">
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">home</a></li>
+                    <li><a href="#" onclick="showSection('farm')">farm</a></li>
+                    <li><a href="#" onclick="showSection('museum')">museum</a></li>
+                    <li><a href="#" onclick="showSection('aquarium')">aquarium</a></li>
+                    <li><a href="#" onclick="showSection('mail')">mail</a></li>
+
+                </ul>
+            </nav>
+            <hr>
+            <div class="content">
+                <section id="home">
+                    <h1>welcome, azie ko &lpar;:</h1>
+                    <div class="heart"></div>
+                    <div class="home">
+                        <p>since my previous surprise got ruined, i made a better version. i hope you enjoy this one more than you enjoyed the last, because i enjoyed making this so much!
+                            'di ako papayag na wala akong surprise sa'yo sa valentine's, hehe. happy hearts day my love, you deserve to smile and be happy. thank you for making me feel so loved
+                            and happy the past few months we've been talking, and i can't wait to make you even happier.
+                        </p>
+                    </div>
+                </section>
+                <section id="aquarium" class="hidden">
+                    <div class="aquarium">
+                        <div class="shark" style="background-image: url('https://i.imgur.com/gf52qI9.png');"></div>
+                        <div class="shark" style="background-image: url('https://i.imgur.com/XQCDyfr.png');"></div>
+                        <div class="shark" style="background-image: url('https://i.imgur.com/6c8Cs3Z.png');"></div>
+                        <div class="shark" style="background-image: url('https://i.imgur.com/Ng8gaeY.png');"></div>
+                        <div class="shark" style="background-image: url('https://i.imgur.com/PyHngBz.png');"></div>
+                    </div>
+                    <div class="instructions">
+                        <p>please be careful not to tap the glass too hard at the aquarium! hi baby, i know you love sharks a lot, so i made you a mini aquarium with sharks. you can press the sharks at the top left of the aquarium to start making them swim, hehe</p>
+                    </div>
+                </section>
+                <section id="farm" class="hidden">
+                    <div class="instructions-strawb">
+                        <p>welcome to the strawberry farm! i know you love everything strawberry, whether it's ice cream or the actual fruit. press the strawberries from left to right to see what's behind them!</p>
+                    </div>
+                    <div class="container">
+                        <div class="strawberry" style="left: 10%; top: 30%; background-image: url('https://i.imgur.com/kDOt4Co.png');"></div>
+                        <p class="hidden-text" style="left: 10%; top: 40%;">i</p>
+                        <div class="strawberry" style="left: 30%; top: 50%; background-image: url('https://i.imgur.com/4HlOk0A.png');"></div>
+                        <p class="hidden-text" style="left: 30%; top: 50%">love</p>
+                        <div class="strawberry" style="left: 50%; top: 40%; background-image: url('https://i.imgur.com/GxeRwsv.png');"></div>
+                        <p class="hidden-text" style="left: 50%; top: 50%">you</p>
+                        <div class="strawberry" style="left: 70%; top: 60%; background-image: url('https://i.imgur.com/WDtD2ji.png');"></div>
+                        <p class="hidden-text" style="left: 70%; top: 70%">so</p>
+                        <div class="strawberry" style="left: 90%; top: 35%; background-image: url('https://i.imgur.com/Ff9dDUI.png');"></div>
+                        <p class="hidden-text" style="left: 90%; top: 45%">much</p>
+                    </div>
+                </section>
+                <section id="museum" class="hidden">
+                    <div class="collage">
+                            <img src="https://i.imgur.com/KaGGuch.jpeg" alt="burnt">
+                            <img src="https://i.imgur.com/Uv1jWGz.png" alt="cannon">
+                            <img src="https://i.imgur.com/UWSY9at.png" alt="christmas">
+                            <img src="https://i.imgur.com/EhGQy0q.png" alt="piano">
+                            <img src="https://i.imgur.com/QL629XY.png" alt="crying">
+                            <img src="https://i.imgur.com/XBdGGSZ.png" alt="helicopter">
+                            <img src="https://i.imgur.com/DDzBkGg.png" alt="pink">
+                            <img src="https://i.imgur.com/uIiXIw5.png" alt="bear">
+                            <img src="https://i.imgur.com/zOWwxpV.png" alt="house">
+                            <img src="https://i.imgur.com/rs3oTsZ.png" alt="kitty">
+                            <img src="https://i.imgur.com/3eaY4mA.png" alt="sit">
+                            <img src="https://i.imgur.com/zfvG2Js.png" alt="coaster">
+                            <img src="https://i.imgur.com/SkekFDn.png" alt="sharkies">
+                            <img src="https://i.imgur.com/4qiydIF.png" alt="snowman">
+                            <img src="https://i.imgur.com/1KVmGLT.png" alt="spider">
+                    </div>
+                    <div class="footer-text">
+                        thank you for coming to the memory lane museum! there are definitely way more memories than these, but over the course of the past two months, these are the memories we got to capture. billions of people 
+                        in the world, and i'd choose to spend every possible moment with you. i can't wait to make more memories with you in the future, especially the memories we'd 
+                        get to make in person. i'm looking forward to seeing you soon, my azie &lt;:
+                    </div>
+                </section>
+                <section id="mail" class="hidden">
+                    <div class="letterins">
+                        <p>something came in the mail for you! press to open and read my mini letter :D &lpar;you can press the pink background to close it, then open it again&rpar;</p>
+                    </div>
+                    <div class="envelope-container">
+                    <div class="envelope" onclick="openEnvelope()">
+                        <div class="top-flap"></div>
+                        <div class="top-flap-2"></div>
+                        <div class="bottom-flap"></div>
+                        <div class="letter" onclick="showLetter(event)">
+                            <div class="letter-content">
+                                <h1>dear whooshark z,</h1>
+                                <p>there's just something about you that makes me want to be better, to live my life, to do my best. the essence of who you are 
+                                    makes the lives of everyone around you feel so much better. being with you is like all of my dreams coming true, but better. 
+                                    there are days where i feel down, but then i remember that what we have? it's something that people can only dream of. and for that, 
+                                    i am grateful to have the privilege of loving you. not everyone can experience the love that we have for each other. i truly am lucky 
+                                    to exist with you, my love.
+                                </p>
+                                <p>from, whooshark c</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </div>
+            
+
+
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
