@@ -13,6 +13,7 @@
                     <li><a href="#" onclick="showSection('museum')">museum</a></li>
                     <li><a href="#" onclick="showSection('aquarium')">aquarium</a></li>
                     <li><a href="#" onclick="showSection('mail')">mail</a></li>
+                    <li><a href="#" onclick="showSection('quiz')">q & a</a></li>
 
                 </ul>
             </nav>
@@ -104,6 +105,24 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                </section>
+                <section id="quiz" class="hidden">
+                    <div class="instructions-strawb">
+                        <p>instructions: for questions that ask "when," enter full month, day, and year. all answers are in lowercase. enjoy! (if you need extra help, try searching for keywords in our chat)</p>
+                    </div>
+                    <div id="question-container"></div>
+                    <div class="form-container">
+                        <div class="form-group">
+                            <input type="text" id="answer-input" class="input" placeholder=" ">
+                            <label for="answer-input" class="label">answer</label>
+                        </div>
+                    </div>
+                    <div id="spotify-container" style="display: none;"></div>
+                    <div id="popup" class="popup hidden">
+                        <div class="popup-content">
+                            <p>hey, so.. that's wrong... press anywhere to try again</p>
+                        </div>
                     </div>
                 </section>
             </div>
