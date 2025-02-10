@@ -14,6 +14,7 @@
                     <li><a href="#" onclick="showSection('aquarium')">aquarium</a></li>
                     <li><a href="#" onclick="showSection('mail')">mail</a></li>
                     <li><a href="#" onclick="showSection('quiz')">q & a</a></li>
+                    <li><a href="#" onclick="showSection('cafe')">cafe</a></li>
 
                 </ul>
             </nav>
@@ -122,6 +123,64 @@
                     <div id="popup" class="popup hidden">
                         <div class="popup-content">
                             <p>hey, so.. that's wrong... press anywhere to try again</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="cafe" class="hidden">
+                    <div class="cafeins">
+                        <p>welcome to the cafe! order for a surprise :P</p>
+                    </div>
+                    <div class="drink-container">
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/6u8PHjt.png" alt="water" class="drink-image">
+                            <button class="drink-button" data-drink="Water">WATER</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/LyLEaQp.png" alt="juice" class="drink-image">
+                            <button class="drink-button" data-drink="Juice">STRAWBERRY JUICE</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/VQTiDvg.png" alt="soda" class="drink-image">
+                            <button class="drink-button" data-drink="Soda">COCA COLA</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/8aXkTRo.png" alt="coffee" class="drink-image">
+                            <button class="drink-button" data-drink="Coffee">COFFEE</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/8be1Apn.png" alt="milk" class="drink-image">
+                            <button class="drink-button" data-drink="Milk">MILK</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/QJo1Ttq.png" alt="matcha" class="drink-image">
+                            <button class="drink-button" data-drink="Matcha">MATCHA</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/XE0Lotl.png" alt="kitkat" class="drink-image">
+                            <button class="drink-button" data-drink="Kitkat">KITKAT</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/4nlhNfp.png" alt="toblerone" class="drink-image">
+                            <button class="drink-button" data-drink="Toblerone">TOBLERONE</button>
+                        </div>
+
+                        <div class="drink-card">
+                            <img src="https://i.imgur.com/r1QV7Qw.png" alt="icecream" class="drink-image">
+                            <button class="drink-button" data-drink="Icecream">ICE CREAM</button>
+                        </div>
+
+                        <div id="drink-modal" class="popup hidden">
+                            <div class="popup-content cafe-popup">
+                                <p id="drink-message"></p>
+                                <span class="close-button">&times;</span>
+                            </div>
                         </div>
                     </div>
                 </section>
