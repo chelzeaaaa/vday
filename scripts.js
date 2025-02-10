@@ -158,3 +158,67 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showQuestion(currentQuestionIndex);
 });
+
+document.querySelectorAll('.drink-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const drinkType = this.dataset.drink;
+        const modal = document.getElementById('drink-modal');
+        const messageElement = document.getElementById('drink-message');
+
+        let message = '';
+        switch(drinkType) {
+            case 'Water':
+                message = 'always drink lots of water okay? warm water if your throat hurts or if you have cough! make sure you have water beside your bed so that you don\'t need to get up if you\'re lazy.';
+                break;
+
+            case 'Juice':
+                message = 'strawberry juice because it\'s pink... you love pink so much and i think it\'s really cute that you incorporate your favorite color into the food and drinks you like. every time i see pink, i remember you.';
+                break;
+
+            case 'Soda':
+                message = 'very unhealthy drink but you like it a lot, and i like you a lot. even though i do love you, i still like you very much, and none of that will ever fade away.';
+                break;
+
+            case 'Coffee':
+                message = 'you love love love coffee so much, and so do i! but you can\'t drink too much coffee okay? just like how coffee is your favorite, you\'re my favorite person.';
+                break;
+
+            case 'Milk':
+                message = 'i\'m not sure, but from what i\'ve noticed, you drink milk every night. it\'s sort of a routine, and you talk to me everyday, so i\'m glad to be a part of not only your daily routine, but your every day life.';
+                break;
+
+            case 'Matcha':
+                message = 'i asked if you like this and you said medyo. you\'re uncertain whether you actually like it or not, but i\'m more than certain that i want to spend forever with you.';
+                break;
+
+            case 'Kitkat':
+                message = 'have a break, have a kitkat? i know we took a short break (cool off...), but you\'re still the person that i love and you\'re still the person that i want to be with.';
+                break;
+
+            case 'Toblerone':
+                message = 'i recently learned that you like this chocolate, and i get excited whenever i get to learn new things about you. i want to know and understand you so i can love you better.';
+                break;
+
+            case 'Icecream':
+                message = 'ice cream seems to make you happy when you\'re feeling down. i hope i can make you happy whenever you\'re sad and take care of you when you\'re unwell.';
+                break;
+
+            default:
+                message = 'what?';
+        }
+
+        messageElement.textContent = message;
+        modal.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-button').addEventListener('click', function () {
+    document.getElementById('drink-modal').style.display = 'none';
+});
+
+window.addEventListener('click', function (event) {
+    const modal = this.document.getElementById('drink-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+})
