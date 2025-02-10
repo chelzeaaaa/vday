@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 questionContainer.innerHTML = '';
                 const congratsMessage = document.createElement('p');
-                congratsMessage.textContent = 'i previously made you a playlist, but i did not want to reuse it. to make the q&a fun, i showed a song for each question. i hope you enjoyed the mini quiz and the songs! and yes, puro opm. i have been listening to opm for you cause you asked me a question noon kung ano gusto ko na opm song, hehe';
+                congratsMessage.textContent = 'i previously made you a playlist, but i did not want to reuse it. to make the q&a fun, i showed a song for each question. i hope you enjoyed the mini quiz and the songs! and yes, puro opm. i have been listening to opm for you cause you asked me a question noon kung ano gusto ko na opm song, and then sabi ko i don\'t listen to opm. so, i started listening for you! hehe';
                 questionContainer.appendChild(congratsMessage);
 
                 formContainer.style.display = 'none';
